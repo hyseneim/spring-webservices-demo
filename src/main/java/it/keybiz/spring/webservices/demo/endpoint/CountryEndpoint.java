@@ -6,8 +6,8 @@ import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
-import io.spring.guides.gs_producing_web_service.GetCountryRequest;
-import io.spring.guides.gs_producing_web_service.GetCountryResponse;
+import it.keybiz.spring.webservices.demo.entity.GetCountryRequest;
+import it.keybiz.spring.webservices.demo.entity.GetCountryResponse;
 import it.keybiz.spring.webservices.demo.repository.CountryRepository;
 
 @Endpoint

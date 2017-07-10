@@ -6,7 +6,7 @@
 //
 
 
-package io.spring.guides.gs_producing_web_service;
+package it.keybiz.spring.webservices.demo.entity;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

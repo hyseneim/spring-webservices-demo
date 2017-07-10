@@ -6,7 +6,7 @@
 //
 
 
-package io.spring.guides.gs_producing_web_service;
+package it.keybiz.spring.webservices.demo.entity;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="country" type="{http://spring.io/guides/gs-producing-web-service}country"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,36 +36,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "name"
+    "country"
 })
-@XmlRootElement(name = "getCountryRequest")
-public class GetCountryRequest {
+@XmlRootElement(name = "getCountryResponse")
+public class GetCountryResponse {
 
     @XmlElement(required = true)
-    protected String name;
+    protected Country country;
 
     /**
-     * Recupera il valore della proprietà name.
+     * Recupera il valore della proprietà country.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Country }
      *     
      */
-    public String getName() {
-        return name;
+    public Country getCountry() {
+        return country;
     }
 
     /**
-     * Imposta il valore della proprietà name.
+     * Imposta il valore della proprietà country.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Country }
      *     
      */
-    public void setName(String value) {
-        this.name = value;
+    public void setCountry(Country value) {
+        this.country = value;
     }
 
 }
